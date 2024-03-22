@@ -1,0 +1,11 @@
+name: using reuasable workflows
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: rakhar20/r-app/.github/workflows/manual_build.yml@main
+
+  deploy:
+    uses: rakhar20/r-app/.github/workflows/manual_deploy.yml@main
